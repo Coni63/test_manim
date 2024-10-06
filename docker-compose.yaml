@@ -1,0 +1,7 @@
+services:
+  manim:
+    image: manimcommunity/manim
+    volumes:
+      - .:/manim
+    user: "${UID}:${GID}"
+    command: manim example_scenes.py SquareToCircle -qm
